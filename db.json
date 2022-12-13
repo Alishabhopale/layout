@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "categoryName": "Home",
+      "id": 4
+    },
+    {
+      "categoryName": "Jewelry",
+      "id": 5
+    },
+    {
+      "categoryName": "Mobile",
+      "id": 6
+    },
+    {
+      "categoryName": "TElevision",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "productName": "Samsung",
+      "category": "",
+      "price": 200000,
+      "description": "64Gb Ram",
+      "id": 1
+    },
+    {
+      "productName": "Tshirt",
+      "price": 700,
+      "description": "Cotton material",
+      "id": 2
+    },
+    {
+      "productName": "Iphone",
+      "price": 500000,
+      "description": "128gb Ram",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

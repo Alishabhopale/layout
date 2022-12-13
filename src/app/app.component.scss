@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+#logo {
+  width: 100%;
+  min-height: 50px;
+  background-color: rgb(228, 234, 237);
+  padding-left: 2%;
+  line-height: 50px;
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+#nav {
+  width: 100%;
+  min-height: 60px;
+  background-color: rgb(245, 242, 242);
+  text-align: center;
+  margin-bottom: 10px;
+}
+#header-banner {
+  width: 100%;
+  min-height: 100px;
+  background-color: lightgray;
+  text-align: center;
+  line-height: 100px;
+  margin-bottom:50px;
+}
+#main {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#sidebar {
+  width: 20%;
+  min-height: 400px;
+  
+  float: left;
+  text-align: center;
+  line-height: 50px;
+}
+#bodyarea {
+  width:75%;
+  min-height:400px;
+  
+  float: right;
+  text-align: center;
+  // line-height: 350px;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.footer {
+  width: 100%;
+  min-height: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 10px;
+} 
+#wrapper {
+  width: 90%;
+  margin: auto;
+} 
+
+.material-icons {
+  // ON HOVER LINK EFFECT
+  cursor: pointer;
+// END
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.material-icons-home {
+  cursor: pointer;
+  font-family: 'Material Icons';
+  font-size: 28px;  /* Preferred icon size */
+}
+
