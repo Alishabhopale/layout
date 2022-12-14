@@ -20,19 +20,21 @@
   "comments": [
     {
       "productName": "Samsung",
-      "category": "",
+      "category": "Electronics",
       "price": 200000,
       "description": "64Gb Ram",
       "id": 1
     },
     {
       "productName": "Tshirt",
+      "category": "Clothes",
       "price": 700,
       "description": "Cotton material",
       "id": 2
     },
     {
       "productName": "Iphone",
+      "category": "Electronics",
       "price": 500000,
       "description": "128gb Ram",
       "id": 3

@@ -22,6 +22,7 @@ export class DialogProductComponent {
   ngOnInit() :void{
     this.productForm = this.formbuilder.group({
       productName : ['', Validators.required],
+      category: ['',Validators.required],
       price : ['',Validators.required],
       description : ['', Validators.required]
     });
@@ -29,6 +30,7 @@ export class DialogProductComponent {
     if(this.editData){
       this.actionBtn = "Update";
       this.productForm.controls['productName'].setValue(this.editData.productName);
+      this.productForm.controls['category'].setValue(this.editData.category);
       this.productForm.controls['price'].setValue(this.editData.price);
       this.productForm.controls['description'].setValue(this.editData.description);
 
