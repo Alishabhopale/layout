@@ -1,6 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ApiService } from 'src/service/api.service';
 import { ProdapiService } from 'src/service/prodapi.service';
 import { DialogComponent } from '../dialog/dialog.component';
 
@@ -13,7 +14,9 @@ export class DialogProductComponent {
   productData : any = [];
   productForm !: FormGroup;
   actionBtn : string = "Save";
+  data: any;
   constructor(
+    private api : ApiService,
     private proapi:ProdapiService,
     private formbuilder: FormBuilder,
     @Inject(MAT_DIALOG_DATA) public editData: any,
@@ -67,5 +70,13 @@ export class DialogProductComponent {
         alert("Something went wrong");
       }
     })
+  }
+  selectCategory(){
+    this.api.getCategory()
+    .subscribe(
+      (data) => {
+        this.data = data;
+       }
+    )
   }
 }

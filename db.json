@@ -1,43 +1,52 @@
 {
   "posts": [
     {
-      "categoryName": "Home",
-      "id": 4
-    },
-    {
-      "categoryName": "Jewelry",
-      "id": 5
-    },
-    {
-      "categoryName": "Mobile",
-      "id": 6
-    },
-    {
-      "categoryName": "TElevision",
-      "id": 7
+      "categoryName": "Clothes",
+      "id": 2
     }
   ],
   "comments": [
     {
-      "productName": "Samsung",
+      "productName": "Table Lamp",
+      "category": "Home Appliances",
+      "price": 5000,
+      "description": "Bright",
+      "id": 4
+    },
+    {
+      "productName": "Xiomi",
       "category": "Electronics",
       "price": 200000,
-      "description": "64Gb Ram",
-      "id": 1
+      "description": "mobile",
+      "id": 5
     },
     {
       "productName": "Tshirt",
       "category": "Clothes",
-      "price": 700,
-      "description": "Cotton material",
-      "id": 2
+      "price": 200,
+      "description": "Cotton",
+      "id": 6
     },
     {
-      "productName": "Iphone",
-      "category": "Electronics",
-      "price": 500000,
-      "description": "128gb Ram",
-      "id": 3
+      "productName": "Lamp",
+      "category": "Home Appliances",
+      "price": 2000,
+      "description": "light",
+      "id": 7
+    },
+    {
+      "productName": "Shirt",
+      "category": "Clothes",
+      "price": 500,
+      "description": "cotton",
+      "id": 8
+    },
+    {
+      "productName": "dummy",
+      "category": "Clothes",
+      "price": 490099,
+      "description": "demo",
+      "id": 9
     }
   ],
   "profile": {

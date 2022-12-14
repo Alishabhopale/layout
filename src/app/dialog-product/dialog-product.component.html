@@ -3,13 +3,14 @@
     <form [formGroup]="productForm">
 
         <mat-form-field appearance="fill">
-            <mat-label>Input</mat-label>
+            <mat-label>Name</mat-label>
             <input formControlName="productName" matInput>
         </mat-form-field>
 
         <mat-form-field appearance="fill">
-            <mat-label>Product Category</mat-label>
+            <mat-label>Category</mat-label>
             <mat-select formControlName="category" placeholder="Category">
+                <mat-option  (click)="selectCategory()"></mat-option>
                 <mat-option value="Clothes">Clothes</mat-option>
                 <mat-option value="Home Appliances">Home Appliances</mat-option>
                 <mat-option value="Electronics">Electronics</mat-option>
@@ -21,7 +22,9 @@
             <input formControlName="price" matInput type="number">
         </mat-form-field>
 
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="fill" style=" white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;">
             <mat-label>Description</mat-label>
             <input formControlName="description" matInput>
         </mat-form-field>
@@ -29,5 +32,5 @@
 </div>
 <div mat-dialog-actions [align]="'end'">
     <button mat-raised-button color="warn" mat-dialog-close>Close</button>
-    <button mat-raised-button color="primary" (click)="addProduct()">{{actionBtn}}</button>
+    <button mat-raised-button color="primary" [disabled]='!productForm.valid' (click)="addProduct()">{{actionBtn}}</button>
 </div>

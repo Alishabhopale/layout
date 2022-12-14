@@ -7,13 +7,14 @@ import { DialogRef } from '@angular/cdk/dialog';
 import { MatTableDataSource } from '@angular/material/table';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
+import { DeletedialogComponent } from '../deletedialog/deletedialog.component';
 @Component({
   selector: 'app-manage-category',
   templateUrl: './manage-category.component.html',
   styleUrls: ['./manage-category.component.scss']
 })
 export class ManageCategoryComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'name','actions'];
+  displayedColumns: string[] = ['name','actions'];
   dataSource! : MatTableDataSource<any>;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
@@ -33,6 +34,12 @@ export class ManageCategoryComponent implements OnInit {
       }
     })
   } 
+  openDeleteDialog(row:any){
+    this.dialog.open(DeletedialogComponent,
+      {
+        data:row
+      });
+  }
   getAllCategories(){
     this.api.getCategory()
     .subscribe({

@@ -20,6 +20,8 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatIconModule} from '@angular/material/icon';
 import { DialogProductComponent } from './dialog-product/dialog-product.component';
 import {MatSelectModule} from '@angular/material/select';
+import { ProductsComponent } from './products/products.component';
+import { DeletedialogComponent } from './deletedialog/deletedialog.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import {MatSelectModule} from '@angular/material/select';
     ManageProductComponent,
     DashboardComponent,
     DialogComponent,
-    DialogProductComponent
+    DialogProductComponent,
+    ProductsComponent,
+    DeletedialogComponent
   ],
   imports: [
     BrowserModule,
