@@ -1,25 +1,15 @@
 {
   "posts": [
     {
+      "categoryName": "Electronics",
+      "id": 1
+    },
+    {
       "categoryName": "Clothes",
       "id": 2
     }
   ],
   "comments": [
-    {
-      "productName": "Table Lamp",
-      "category": "Home Appliances",
-      "price": 5000,
-      "description": "Bright",
-      "id": 4
-    },
-    {
-      "productName": "Xiomi",
-      "category": "Electronics",
-      "price": 200000,
-      "description": "mobile",
-      "id": 5
-    },
     {
       "productName": "Tshirt",
       "category": "Clothes",
@@ -47,6 +37,13 @@
       "price": 490099,
       "description": "demo",
       "id": 9
+    },
+    {
+      "productName": "set",
+      "category": "Clothes",
+      "price": 23444,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "id": 10
     }
   ],
   "profile": {

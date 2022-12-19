@@ -8,6 +8,10 @@ table {
   }
   
   td, th {
-    width: 15%;
+    width: 180px;
+    overflow: hidden;
+    width:auto;
+    text-overflow: ellipsis;
+   // white-space: nowrap;
   }
   

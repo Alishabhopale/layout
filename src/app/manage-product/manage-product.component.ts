@@ -5,6 +5,8 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { ProdapiService } from 'src/service/prodapi.service';
+import { DeleteProductdialogComponent } from '../delete-productdialog/delete-productdialog.component';
+import { DeletedialogComponent } from '../deletedialog/deletedialog.component';
 import { DialogProductComponent } from '../dialog-product/dialog-product.component';
 
 @Component({
@@ -76,5 +78,11 @@ export class ManageProductComponent {
         alert("Something went wrong");
       }
     })
+  }
+  openDeleteProductDialog(row:any){
+    this.dialog.open(DeleteProductdialogComponent,
+      {
+        data:row
+      });
   }
 }

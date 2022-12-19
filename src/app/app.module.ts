@@ -22,6 +22,7 @@ import { DialogProductComponent } from './dialog-product/dialog-product.componen
 import {MatSelectModule} from '@angular/material/select';
 import { ProductsComponent } from './products/products.component';
 import { DeletedialogComponent } from './deletedialog/deletedialog.component';
+import { DeleteProductdialogComponent } from './delete-productdialog/delete-productdialog.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { DeletedialogComponent } from './deletedialog/deletedialog.component';
     DialogComponent,
     DialogProductComponent,
     ProductsComponent,
-    DeletedialogComponent
+    DeletedialogComponent,
+    DeleteProductdialogComponent
   ],
   imports: [
     BrowserModule,

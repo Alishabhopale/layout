@@ -10,7 +10,7 @@
         <mat-form-field appearance="fill">
             <mat-label>Category</mat-label>
             <mat-select formControlName="category" placeholder="Category">
-                <mat-option  (click)="selectCategory()"></mat-option>
+                <mat-option></mat-option>
                 <mat-option value="Clothes">Clothes</mat-option>
                 <mat-option value="Home Appliances">Home Appliances</mat-option>
                 <mat-option value="Electronics">Electronics</mat-option>
@@ -22,9 +22,7 @@
             <input formControlName="price" matInput type="number">
         </mat-form-field>
 
-        <mat-form-field appearance="fill" style=" white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;">
+        <mat-form-field appearance="fill" >
             <mat-label>Description</mat-label>
             <input formControlName="description" matInput>
         </mat-form-field>
