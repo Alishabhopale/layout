@@ -34,6 +34,5 @@ export class DeletedialogComponent {
       window.location.reload();
       this.getCatgory();
     })
-    
   }
 }

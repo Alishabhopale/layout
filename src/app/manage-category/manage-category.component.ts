@@ -14,8 +14,9 @@ import { DeletedialogComponent } from '../deletedialog/deletedialog.component';
   styleUrls: ['./manage-category.component.scss']
 })
 export class ManageCategoryComponent implements OnInit {
-  displayedColumns: string[] = ['name','actions'];
+  displayedColumns: string[] = ['index','name','actions'];
   dataSource! : MatTableDataSource<any>;
+  pageEvent={pageSize:10,pageIndex:0}
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 

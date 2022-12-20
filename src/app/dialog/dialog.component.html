@@ -1,11 +1,16 @@
 
-<h1 mat-dialog-title>Add Category</h1>
+  <h1 mat-dialog-title>Add Category</h1>
 <div mat-dialog-content>
  <form [formGroup]="categoryForm">
   <mat-form-field appearance="fill">
     <mat-label>Name</mat-label>
     <input formControlName="categoryName" matInput>
   </mat-form-field>
+  <span class="validations"
+
+        *ngIf="categoryForm.get('categoryName')?.errors?.['required'] && categoryForm.get('categoryName')?.touched">
+
+        Name is required </span>
  </form>
 </div>
 <div mat-dialog-actions [align]="'end'">

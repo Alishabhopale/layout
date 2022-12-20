@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ApiService } from 'src/service/api.service';
 import { ProdapiService } from 'src/service/prodapi.service';
@@ -24,9 +24,9 @@ export class DialogProductComponent {
   ) {}
   ngOnInit(): void {
     this.productForm = this.formbuilder.group({
-      productName: ['', Validators.required],
+      "productName": ['', Validators.required],
       category: ['', Validators.required],
-      price: ['', Validators.required],
+      "price": new FormControl('', [Validators.required, Validators.pattern("^[0-9]{1,10}$")]),
       description: ['', Validators.required],
     });
 
@@ -43,8 +43,9 @@ export class DialogProductComponent {
     }
   }
   addProduct() {
+    console.log('hii');
     if (!this.editData) {
-      if (this.productForm.valid) {
+    
         this.proapi.postProduct(this.productForm.value).subscribe({
           next: (res) => {
             alert('Product Added');
@@ -55,11 +56,11 @@ export class DialogProductComponent {
             alert('Something went wrong');
           },
         });
-      }
+      
     } else {
       this.updateProduct();
     }
-  }
+}
   updateProduct() {
     this.proapi
       .updateProduct(this.productForm.value, this.editData.id)

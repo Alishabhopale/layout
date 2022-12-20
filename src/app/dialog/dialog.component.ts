@@ -36,7 +36,7 @@ export class DialogComponent {
       this.api.postCategory(this.categoryForm.value)
       .subscribe({
         next:(res)=>{
-          alert("Product Added")
+          alert("Category Added")
           this.categoryForm.reset();
           this.dialogRef.close('save');
         },

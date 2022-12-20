@@ -16,8 +16,9 @@ import { DialogProductComponent } from '../dialog-product/dialog-product.compone
 })
 export class ManageProductComponent {
 
-  displayedColumns: string[] = ['name','category','price','description','actions'];
+  displayedColumns: string[] = ['index','name','category','price','description','actions'];
   dataSource! : MatTableDataSource<any>;
+  pageEvent={pageSize:10,pageIndex:0}
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 

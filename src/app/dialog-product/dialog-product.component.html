@@ -1,11 +1,15 @@
 <h1 mat-dialog-title>Add Product</h1>
 <div mat-dialog-content>
     <form [formGroup]="productForm">
-
         <mat-form-field appearance="fill">
             <mat-label>Name</mat-label>
             <input formControlName="productName" matInput>
         </mat-form-field>
+        <span class="validations"
+
+        *ngIf="productForm.get('productName')?.errors?.['required'] && productForm.get('productName')?.touched">
+
+        Product Name is required </span>
 
         <mat-form-field appearance="fill">
             <mat-label>Category</mat-label>
@@ -16,19 +20,36 @@
                 <mat-option value="Electronics">Electronics</mat-option>
             </mat-select>
         </mat-form-field>
+        <span class="validations"
 
+        *ngIf="productForm.get('category')?.errors?.['required'] && productForm.get('category')?.touched">
+
+        Category is required </span>
+
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Price</mat-label>
+                <input formControlName="price" matInput type="number">
+            </mat-form-field>
+            <span class="validations"
+                *ngIf="productForm.get('price')?.errors?.['required'] && productForm.get('price')?.touched">
+                Price is required </span>
+            <span class="validations" *ngIf="productForm.get('price')?.errors?.['pattern']">Price format is
+                required</span>
+        </div>
         <mat-form-field appearance="fill">
-            <mat-label>Price</mat-label>
-            <input formControlName="price" matInput type="number">
-        </mat-form-field>
-
-        <mat-form-field appearance="fill" >
             <mat-label>Description</mat-label>
-            <input formControlName="description" matInput>
+            <textarea formControlName="description" matInput>
+                </textarea>
         </mat-form-field>
+        <span class="validations"
+
+        *ngIf="productForm.get('description')?.errors?.['required'] && productForm.get('description')?.touched">
+        Description is required </span>
     </form>
 </div>
 <div mat-dialog-actions [align]="'end'">
     <button mat-raised-button color="warn" mat-dialog-close>Close</button>
-    <button mat-raised-button color="primary" [disabled]="!(productForm.valid && productForm.dirty)" (click)="addProduct()">{{actionBtn}}</button>
+    <button mat-raised-button color="primary" [disabled]="!(productForm.valid && productForm.dirty)"
+        (click)="addProduct()">{{actionBtn}}</button>
 </div>

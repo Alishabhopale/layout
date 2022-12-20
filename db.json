@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "categoryName": "Mobile",
-      "id": 2
-    },
-    {
       "categoryName": "Home",
       "id": 3
     },
@@ -35,29 +31,65 @@
     {
       "categoryName": "cycle",
       "id": 10
+    },
+    {
+      "categoryName": "hi",
+      "id": 11
+    },
+    {
+      "categoryName": "hi",
+      "id": 12
     }
   ],
   "comments": [
-    {
-      "productName": "Shirt",
-      "category": "Clothes",
-      "price": 500,
-      "description": "cotton",
-      "id": 8
-    },
-    {
-      "productName": "dummy",
-      "category": "Clothes",
-      "price": 490099,
-      "description": "demo",
-      "id": 9
-    },
     {
       "productName": "set",
       "category": "Clothes",
       "price": 23444,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "id": 10
+    },
+    {
+      "productName": "shdkjs",
+      "category": "Home Appliances",
+      "price": 24344,
+      "description": "dfdsc",
+      "id": 12
+    },
+    {
+      "productName": "sndksd",
+      "category": "Home Appliances",
+      "price": 4784724,
+      "description": "ahkkadadk",
+      "id": 13
+    },
+    {
+      "productName": "mobile",
+      "category": "Home Appliances",
+      "price": 927387,
+      "description": "xzcc",
+      "id": 14
+    },
+    {
+      "productName": "shd",
+      "category": "Home Appliances",
+      "price": 2333,
+      "description": "sdsdsd",
+      "id": 15
+    },
+    {
+      "productName": "hd",
+      "category": "Home Appliances",
+      "price": 1223,
+      "description": "cxxxxxxxxxxxx",
+      "id": 16
+    },
+    {
+      "productName": "hkh",
+      "category": "Home Appliances",
+      "price": 12333,
+      "description": "sdsdsddd",
+      "id": 17
     }
   ],
   "profile": {

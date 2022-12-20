@@ -4,10 +4,30 @@ table {
   
   .mat-mdc-form-field {
     font-size: 16px;
-    width: 100%;
+    width: 80%;
+  
   }
   
   td, th {
     width:20%;
   }
+  .filterAdd {
+    display: flex;
+  }
+  .add_category{
+    margin: 8px 8px;
+    padding: 22px;
+  }
+  // .upperDiv {
+    
+  //   margin: 1rem;
+  //   padding: 2rem 2rem;
+  //   text-align: center;
+  // }
+  // .filterAdd {
+  //   display: inline-block;
+    
+  //   padding: 1rem 1rem;
+  //   vertical-align: middle;
+  // }
   
