@@ -26,6 +26,7 @@ export class DeleteProductdialogComponent {
     this.prodapi.deleteProduct(this.openDeleteProductDialog.id)
     .subscribe((res)=>{
       console.log(this.openDeleteProductDialog.id,'res')
+      window.location.reload();
       this.getProd();
     })
   }

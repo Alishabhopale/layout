@@ -12,6 +12,7 @@ export class DialogComponent {
   category : any;
   categoryForm !: FormGroup;
   actionBtn : string = "Save";
+  isAdded : boolean = false;
   constructor(
     private api:ApiService,
     private formbuilder: FormBuilder,

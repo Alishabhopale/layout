@@ -24,12 +24,14 @@ export class DeletedialogComponent {
       this.datasource = res;
       console.log(this.datasource);
     })
+    
   }
 
   onDeleteCategory(row:any){
     this.api.deleteCategory(this.openDeleteDialog.id)
     .subscribe((res)=>{
       console.log(this.openDeleteDialog.id,'res')
+      window.location.reload();
       this.getCatgory();
     })
     

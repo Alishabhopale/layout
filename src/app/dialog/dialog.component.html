@@ -1,3 +1,4 @@
+
 <h1 mat-dialog-title>Add Category</h1>
 <div mat-dialog-content>
  <form [formGroup]="categoryForm">
@@ -9,8 +10,12 @@
 </div>
 <div mat-dialog-actions [align]="'end'">
 <button mat-raised-button color="warn" mat-dialog-close>Close</button>
-<button mat-raised-button color="primary" [disabled]='!categoryForm.valid' (click)="addProduct()">{{actionBtn}}</button>
+<button mat-raised-button color="primary" [disabled]="!(categoryForm.valid && categoryForm.dirty)" (click)="addProduct()">{{actionBtn}}</button>
 </div>
+
+<!-- <div *ngIf="isAdded" style="font-size: medium;font-weight: bold;display:flexbox">
+  Category Added Successfully!!
+</div> -->
 
 
 

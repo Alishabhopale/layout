@@ -74,13 +74,4 @@ export class DialogProductComponent {
         },
       });
   }
-  
-  // selectCategory(){
-  //   this.api.getCategory()
-  //   .subscribe(
-  //     (data) => {
-  //       this.data = data;
-  //      }
-  //   )
-  // }
 }

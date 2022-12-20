@@ -1,29 +1,43 @@
 {
   "posts": [
     {
-      "categoryName": "Electronics",
-      "id": 1
+      "categoryName": "Mobile",
+      "id": 2
     },
     {
-      "categoryName": "Clothes",
-      "id": 2
-    }
-  ],
-  "comments": [
+      "categoryName": "Home",
+      "id": 3
+    },
     {
-      "productName": "Tshirt",
-      "category": "Clothes",
-      "price": 200,
-      "description": "Cotton",
+      "categoryName": "bike",
+      "id": 4
+    },
+    {
+      "categoryName": "Jewel",
+      "id": 5
+    },
+    {
+      "categoryName": "Decor",
       "id": 6
     },
     {
-      "productName": "Lamp",
-      "category": "Home Appliances",
-      "price": 2000,
-      "description": "light",
+      "categoryName": "ring",
       "id": 7
     },
+    {
+      "categoryName": "bottle",
+      "id": 8
+    },
+    {
+      "categoryName": "car",
+      "id": 9
+    },
+    {
+      "categoryName": "cycle",
+      "id": 10
+    }
+  ],
+  "comments": [
     {
       "productName": "Shirt",
       "category": "Clothes",
